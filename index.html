@@ -3,90 +3,75 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ficha Personal | Jose Guillermo</title>
-
-  <!-- Fuentes y estilos -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <title>Jose Guillermo — Perfil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/feather-icons"></script>
 </head>
-
 <body>
-  <div class="container">
-    <div class="header">
-      <img src="https://i.imgur.com/iJVZqXQ.png" class="avatar" alt="Foto de perfil">
-      <p><span class="name">Hola, soy Jose Guillermo Vasquez Guzman</span></p>
-      <p class="description-box">
-        Soy Ingeniero Legal. Un visionario experto en diseñar y desarrollar soluciones legales con Inteligencia Artificial.
-      </p>
-      <p class="intro-text">¡Conoce sobre mí en los siguientes enlaces!</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <img class="avatar" src="https://i.imgur.com/iJVZqXQ.png" alt="Foto de Jose Guillermo">
+      <h1 class="hero-title">Diseño soluciones legales con <span class="highlight">Inteligencia Artificial</span></h1>
+      <p class="hero-sub">Ingeniero Legal • Abogado de la Universidad de los Andes | Consultor en PI, datos, cumplimiento y Legal‑Tech</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://ambitious-bongo-b6d.notion.site/Catalogo-de-servicios-de-AVOCADO-center-1d5299b51c848177893afb21fb25e58a" target="_blank" rel="noopener">📘 Consulta mis servicios</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/message/F5WCMM3W67FLH1" target="_blank" rel="noopener">💬 Envíame un mensaje</a>
+        <a class="btn btn-ghost" href="mailto:jguillervg@avocado.center">✉️ Envíame un correo</a>
+      </div>
     </div>
+  </header>
 
-    <!-- 📞 CONTACTO PROFESIONAL -->
-    <h4>CONTACTO PROFESIONAL</h4>
-    <div class="links-container">
-      <a href="https://wa.me/message/F5WCMM3W67FLH1" id="link-whatsapp" class="btn" target="_blank">
-        <i data-feather="message-circle"></i> Envíame un mensaje
-      </a>
-      <a href="mailto:jguillervg@avocado.center" class="btn" target="_blank">
-        <i data-feather="mail"></i> Envíame un correo
-      </a>
+  <main class="main">
+    <section class="intro">
+      <div class="container">
+        <p class="lead">
+        Combino derecho, tecnología e innovación para diseñar soluciones legales creativas impulsadas por inteligencia artificial y legal design.<br><br>
+        Me apasiona aplicar nuevas tecnologías al ejercicio del derecho, optimizando servicios legales y conectando a las personas con la justicia de forma más eficiente.
+        </p>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container grid">
+        <article class="card">
+          <div class="card-media avocado"></div>
+          <h3>Proyecto AVOCADO</h3>
+          <p class="muted">Soy el CEO del proyecto que desarrolla <em>Tu abogado de bolsillo.</em></p>
+          <p class="desc">
+          Avocado es la Solución Legal Virtual que pone un abogado experto a tu disposición 24 horas al día, 7 días a la semana, directamente por WhatsApp.<br><br>
+          Nuestro valor único radica en la confianza y eficiencia: nuestra IA maneja tareas rutinarias, mientras abogados expertos intervienen en casos complejos.<br><br>
+          Generamos soluciones en minutos, con alta calidad y costos accesibles.<br><br>
+          Simplificamos el derecho, democratizando el acceso a la excelencia jurídica y enfocando tu inversión en el conocimiento humano esencial.
+          </p>
+          <a class="btn btn-blue" href="https://avocado.center" target="_blank" rel="noopener">Visitar proyecto</a>
+        </article>
+
+        <article class="card">
+          <div class="card-media aldana"></div>
+          <h3>Aldana Hernández Legal</h3>
+          <p class="muted">En Aldana soy el consultor experto en Propiedad Intelectual, Datos y Cumplimiento.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="links">
+      <div class="container">
+        <h4>Redes y recursos</h4>
+        <div class="links-grid">
+          <a class="social-card" href="https://www.linkedin.com/in/jose-guillermo-vg" target="_blank" rel="noopener">💼 LinkedIn</a>
+          <a class="social-card" href="https://github.com/joselito412" target="_blank" rel="noopener">🐙 GitHub</a>
+          <a class="social-card" href="https://www.instagram.com/joseguiller?igsh=MWFuNjRkZmVqY3poZQ==" target="_blank" rel="noopener">📸 Instagram</a>
+          <a class="social-card" href="https://avocado.center/blog" target="_blank" rel="noopener">🧠 Blog LegalTech</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand">© 2025 Jose Guillermo — Diseño propio 🥑</div>
+      <div class="small">Hecho con enfoque Legal‑Tech y cariño.</div>
     </div>
-
-    <!-- 🌟 SERVICIOS PROFESIONALES (NOTION) -->
-    <h4>SERVICIOS PROFESIONALES</h4>
-    <div class="links-container">
-      <a href="https://ambitious-bongo-b6d.notion.site/Catalogo-de-servicios-de-AVOCADO-center-1d5299b51c848177893afb21fb25e58a"
-         class="btn btn-notion"
-         target="_blank">
-        📘 Consulta mi catalogo servicios profesionales
-      </a>
-    </div>
-
-    <!-- 💼 MIS PROYECTOS -->
-    <h4>MIS PROYECTOS</h4>
-
-    <h4 id="title-avocado">PROYECTO AVOCADO, tu abogado de bolsillo</h4>
-    <p class="project-description">CEO del proyecto</p>
-    <div class="links-container">
-      <a href="https://avocado.center" id="link-avocado" class="btn project-btn" target="_blank"></a>
-    </div>
-
-    <h4 id="title-aldana">Aldana Hernández Legal</h4>
-    <p class="project-description">Abogado en PI, datos y cumplimiento</p>
-    <div class="links-container">
-      <a href="https://wa.me/573152121379" id="link-aldana" class="btn project-btn" target="_blank"></a>
-    </div>
-
-    <!-- 🧠 EXPERIENCIA -->
-    <h4>MI EXPERIENCIA</h4>
-    <div class="links-container">
-      <a href="https://www.linkedin.com/in/jose-guillermo-vg" id="link-linkedin" class="btn" target="_blank">LinkedIn</a>
-    </div>
-
-    <!-- 🌐 REDES SOCIALES -->
-    <h4>MIS REDES SOCIALES</h4>
-    <div class="links-container">
-      <a href="https://www.instagram.com/joseguiller?igsh=MWFuNjRkZmVqY3poZQ==" class="btn" target="_blank">Instagram</a>
-      <a href="https://github.com/joselito412" class="btn" target="_blank">GitHub</a>
-    </div>
-
-    <!-- 📝 BLOG -->
-    <h4>BLOG LEGAL-TECH</h4>
-    <div class="links-container">
-      <a href="https://avocado.center/blog-legal-tech/" class="btn" target="_blank">Blog Legal-TECH</a>
-    </div>
-
-    <!-- 🥑 PIE -->
-    <div class="bottom">
-      <span>🥑</span>
-      <span>2025 | Diseño propio</span>
-      <span>🥑</span>
-    </div>
-  </div>
-
-  <script>feather.replace()</script>
+  </footer>
 </body>
 </html>

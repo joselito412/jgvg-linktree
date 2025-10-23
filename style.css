@@ -1,170 +1,63 @@
-/* 🎨 Paleta de colores */
-:root {
-  --verde: #6AAE7D;
-  --azul: #4065B9;
-  --rojo: #F20746;
-  --amarillo: #EAD476;
-  --amarillo-claro: #FFF5C3;
-  --texto-oscuro: #222222;
-  --fondo-gradiente: linear-gradient(180deg, #EAD476 0%, #FFF5C3 100%);
+:root{
+  --azul:#4065B9;
+  --verde:#6AAE7D;
+  --dorado:#EAD476;
+  --fondo:#FFF9E6;
+  --tarjeta:#F9F4D8;
+  --texto:#1E1E1E;
+  --max-width:980px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Lato',sans-serif;background:var(--fondo);color:var(--texto);-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit;transition:.3s}
+
+.hero{background:linear-gradient(180deg,var(--azul) 0%,#1E1E1E 100%);color:#fff;text-align:center;padding:60px 20px}
+.avatar{width:140px;height:140px;border-radius:50%;border:5px solid rgba(255,255,255,0.2);margin-bottom:20px;object-fit:cover}
+.hero-title{font-family:'Comfortaa',sans-serif;font-size:1.8rem}
+.highlight{background:linear-gradient(90deg,var(--dorado),#fff3b0);color:#111;padding:4px 8px;border-radius:6px;font-weight:700}
+.hero-sub{opacity:.9;margin:10px 0 25px;font-size:1.05rem}
+.hero-ctas{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.btn{padding:12px 20px;border-radius:30px;font-weight:700;display:inline-block}
+.btn-primary{background:var(--dorado);color:#111;box-shadow:0 4px 12px rgba(234,212,118,.4)}
+.btn-whatsapp{background:var(--verde);color:#fff;box-shadow:0 4px 14px rgba(106,174,125,.4)}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2)}
+.btn:hover{transform:translateY(-2px)}
+
+.main{padding:50px 20px}
+.container{max-width:var(--max-width);margin:0 auto}
+.lead{text-align:center;font-size:1.05rem;line-height:1.6;margin-bottom:40px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
+.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 6px 14px rgba(0,0,0,.06)}
+.card h3{margin-bottom:8px;font-family:'Comfortaa',sans-serif;color:var(--azul)}
+.card .muted{color:#555;font-size:.95rem;margin-bottom:12px}
+.card .desc{color:#333;font-size:.9rem;line-height:1.55;margin-bottom:15px}
+.card-media{height:100px;border-radius:8px;background-size:cover;background-position:center;margin-bottom:12px}
+.avocado{background-image:url('https://i.imgur.com/5P9h37q.png')}
+.aldana{background-image:url('https://i.imgur.com/HlEJgcq.png')}
+.btn-blue{background:var(--azul);color:#fff;border-radius:8px;padding:10px 14px;font-weight:600;display:inline-block}
+
+.links{margin-top:60px;text-align:center}
+.links h4{font-family:'Comfortaa',sans-serif;font-size:1.8rem;margin-bottom:30px;color:var(--azul)}
+.links-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;justify-items:center}
+.social-card{
+  background:var(--tarjeta);
+  padding:22px;
+  border-radius:16px;
+  box-shadow:0 6px 14px rgba(0,0,0,.08);
+  border:1px solid rgba(0,0,0,.08);
+  width:100%;
+  max-width:260px;
+  font-weight:600;
+  color:var(--texto);
+  font-size:1.05rem;
+}
+.social-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 22px rgba(0,0,0,.1);
+  border-color:rgba(0,0,0,.15);
+  background:#F2EACB;
 }
 
-/* 🧩 Configuración general */
-body {
-  font-family: 'Lato', sans-serif;
-  background: var(--fondo-gradiente);
-  margin: 0;
-  padding: 0;
-  color: var(--texto-oscuro);
-}
-
-/* 🪄 Contenedor principal */
-.container {
-  max-width: 540px;
-  margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.97);
-  border-radius: 16px;
-  padding: 25px 15px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-/* 🖼️ Imagen de perfil */
-.avatar {
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-
-/* 👤 Nombre */
-.name {
-  display: inline-block;
-  background-color: var(--azul);
-  color: white;
-  padding: 6px 10px;
-  border-radius: 8px;
-  font-weight: 700;
-  margin-top: 10px;
-}
-
-/* 🧠 Descripción profesional */
-.description-box {
-  background-color: rgba(255, 255, 255, 1);
-  border-radius: 10px;
-  padding: 14px;
-  margin: 15px 0;
-  font-weight: 600;
-  color: var(--texto-oscuro);
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-/* ✨ Texto introductorio */
-.intro-text {
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: var(--texto-oscuro);
-}
-
-/* 🏷️ Títulos */
-h4 {
-  background-color: rgba(64, 101, 185, 0.85);
-  color: white;
-  padding: 8px;
-  border-radius: 6px;
-  margin: 25px 0 10px 0;
-}
-
-#title-avocado {
-  background-color: rgba(106, 174, 125, 0.85);
-}
-
-/* 🔗 Enlaces */
-.links-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-/* 🟡 Botones */
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  background-color: var(--amarillo);
-  color: var(--texto-oscuro);
-  padding: 10px 15px;
-  border-radius: 25px;
-  width: 80%;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-/* 🔵 Botón especial para Notion */
-.btn-notion {
-  background-color: #3E3E3E; /* gris oscuro tipo Notion */
-  color: #ffffff;
-}
-
-.btn-notion:hover {
-  background-color: #222222;
-  color: #EAD476; /* tono dorado al pasar el mouse */
-}
-
-.btn:hover {
-  background-color: var(--verde);
-  color: white;
-}
-
-/* 📱 Botones especiales */
-#link-whatsapp {
-  background-color: var(--verde);
-  color: white;
-}
-
-#link-linkedin {
-  background-color: var(--azul);
-  color: white;
-}
-
-/* 🧱 Proyectos con imagen */
-.project-btn {
-  min-height: 80px;
-  font-size: 0;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-}
-
-#link-avocado {
-  background-image: url('https://i.imgur.com/5P9h37q.png');
-}
-
-#link-aldana {
-  background-image: url('https://i.imgur.com/HlEJgcq.png');
-}
-
-/* 🥑 Pie */
-.bottom {
-  margin-top: 25px;
-  font-weight: bold;
-  color: var(--texto-oscuro);
-}
-
-/* 📱 Responsivo */
-@media (max-width: 600px) {
-  .container {
-    width: 90%;
-    padding: 20px 10px;
-  }
-
-  .btn {
-    width: 90%;
-    font-size: 0.95em;
-  }
-
-  .description-box {
-    font-size: 0.95em;
-  }
-}
+.footer{background:#111;color:#ddd;text-align:center;padding:25px 10px;margin-top:60px}
+.footer-inner{display:flex;flex-direction:column;gap:8px;align-items:center}
