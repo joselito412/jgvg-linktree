@@ -1,22 +1,34 @@
+/* 🎨 Paleta de colores */
 :root {
   --verde: #6AAE7D;
   --azul: #4065B9;
   --rojo: #F20746;
   --amarillo: #EAD476;
   --amarillo-claro: #FFF5C3;
-  --texto-oscuro: #333333;
+  --texto-oscuro: #222222;
   --texto-claro: #F5F5F5;
   --fondo-gradiente: linear-gradient(180deg, #EAD476 0%, #FFF5C3 100%);
 }
 
 /* 🌙 Modo oscuro automático */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --fondo-gradiente: linear-gradient(180deg, #2F2F2F 0%, #1C1C1C 100%);
-    --texto-oscuro: #F5F5F5;
+  body {
+    background: linear-gradient(180deg, #2C2C2C 0%, #1E1E1E 100%);
+    color: var(--texto-claro);
+  }
+
+  .container {
+    background-color: rgba(40, 40, 40, 0.95);
+  }
+
+  .description-box,
+  .intro-text,
+  .bottom {
+    color: var(--texto-claro);
   }
 }
 
+/* 🧩 Configuración general */
 body {
   font-family: 'Lato', sans-serif;
   background: var(--fondo-gradiente);
@@ -25,22 +37,18 @@ body {
   color: var(--texto-oscuro);
 }
 
+/* 🪄 Contenedor principal */
 .container {
   max-width: 540px;
   margin: 30px auto;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.97);
   border-radius: 16px;
   padding: 25px 15px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-@media (prefers-color-scheme: dark) {
-  .container {
-    background-color: rgba(40, 40, 40, 0.9);
-  }
-}
-
+/* 🖼️ Imagen de perfil */
 .avatar {
   border-radius: 50%;
   width: 150px;
@@ -48,6 +56,7 @@ body {
   object-fit: cover;
 }
 
+/* 👤 Nombre */
 .name {
   display: inline-block;
   background-color: var(--azul);
@@ -58,23 +67,26 @@ body {
   margin-top: 10px;
 }
 
+/* 🧠 Descripción profesional */
 .description-box {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 10px;
-  padding: 12px;
+  padding: 14px;
   margin: 15px 0;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--texto-oscuro);
   font-size: 1em;
   line-height: 1.5;
 }
 
+/* ✨ Texto introductorio */
 .intro-text {
   font-weight: bold;
   margin-bottom: 15px;
   color: var(--texto-oscuro);
 }
 
+/* 🏷️ Títulos */
 h4 {
   background-color: rgba(64, 101, 185, 0.85);
   color: white;
@@ -87,6 +99,7 @@ h4 {
   background-color: rgba(106, 174, 125, 0.85);
 }
 
+/* 🔗 Enlaces */
 .links-container {
   display: flex;
   flex-direction: column;
@@ -94,6 +107,7 @@ h4 {
   gap: 10px;
 }
 
+/* 🟡 Botones */
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -111,6 +125,7 @@ h4 {
   color: white;
 }
 
+/* 📱 Botones especiales */
 #link-whatsapp {
   background-color: var(--verde);
   color: white;
@@ -121,11 +136,13 @@ h4 {
   color: white;
 }
 
+/* 🧱 Proyectos con imagen */
 .project-btn {
   min-height: 80px;
   font-size: 0;
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
 }
 
 #link-avocado {
@@ -136,21 +153,25 @@ h4 {
   background-image: url('https://i.imgur.com/HlEJgcq.png');
 }
 
+/* 🥑 Pie */
 .bottom {
   margin-top: 25px;
   font-weight: bold;
   color: var(--texto-oscuro);
 }
 
+/* 📱 Responsivo */
 @media (max-width: 600px) {
   .container {
     width: 90%;
     padding: 20px 10px;
   }
+
   .btn {
     width: 90%;
     font-size: 0.95em;
   }
+
   .description-box {
     font-size: 0.95em;
   }
