@@ -101,6 +101,17 @@ h4 {
   transition: all 0.3s ease;
 }
 
+/* 🔵 Botón especial para Notion */
+.btn-notion {
+  background-color: #3E3E3E; /* gris oscuro tipo Notion */
+  color: #ffffff;
+}
+
+.btn-notion:hover {
+  background-color: #222222;
+  color: #EAD476; /* tono dorado al pasar el mouse */
+}
+
 .btn:hover {
   background-color: var(--verde);
   color: white;
