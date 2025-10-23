@@ -6,26 +6,7 @@
   --amarillo: #EAD476;
   --amarillo-claro: #FFF5C3;
   --texto-oscuro: #222222;
-  --texto-claro: #F5F5F5;
   --fondo-gradiente: linear-gradient(180deg, #EAD476 0%, #FFF5C3 100%);
-}
-
-/* 🌙 Modo oscuro automático */
-@media (prefers-color-scheme: dark) {
-  body {
-    background: linear-gradient(180deg, #2C2C2C 0%, #1E1E1E 100%);
-    color: var(--texto-claro);
-  }
-
-  .container {
-    background-color: rgba(40, 40, 40, 0.95);
-  }
-
-  .description-box,
-  .intro-text,
-  .bottom {
-    color: var(--texto-claro);
-  }
 }
 
 /* 🧩 Configuración general */
